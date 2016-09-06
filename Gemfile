@@ -6,7 +6,7 @@ ruby IO.read('.ruby-version').strip
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 
 gem 'autoprefixer-rails'
-gem 'booking_locations'
+gem 'booking_locations', :git => 'https://github.com/guidance-guarantee-programme/booking_locations', :branch => 'prototypes/phone-appointment-booking'
 gem 'bugsnag'
 gem 'canonical-rails'
 gem 'faraday'

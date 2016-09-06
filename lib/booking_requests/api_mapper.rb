@@ -14,9 +14,7 @@ module BookingRequests
           marketing_opt_in: booking_request.opt_in,
           defined_contribution_pot: dc_pot_as_boolean(booking_request.dc_pot),
           slots: [
-            slot(1, booking_request.primary_slot),
-            slot(2, booking_request.secondary_slot),
-            slot(3, booking_request.tertiary_slot)
+            slot(1, booking_request.primary_slot)
           ]
         }
       }

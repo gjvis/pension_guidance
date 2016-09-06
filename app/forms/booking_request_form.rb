@@ -8,8 +8,6 @@ class BookingRequestForm
 
   with_options if: :step_one? do |step_one|
     step_one.validates :primary_slot, presence: true
-    step_one.validates :secondary_slot, presence: true
-    step_one.validates :tertiary_slot, presence: true
   end
 
   with_options if: :step_two? do |step_two|

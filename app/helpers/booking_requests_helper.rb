@@ -4,7 +4,11 @@ module BookingRequestsHelper
   end
 
   def slot_period(slot_text)
-    slot_properties(slot_text)[:from] == '0900' ? 'Morning' : 'Afternoon'
+    from_date = slot_properties(slot_text)[:from]
+    hour = from_date[0,2]
+    minute = from_date[2,4]
+    am_pm = hour.to_i < 12 ? 'am' : 'pm'
+    "#{hour}:#{minute}#{am_pm}"
   end
 
   def slot_duration

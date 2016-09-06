@@ -14,7 +14,9 @@
     }
 
     createSlotPicker() {
-      moj.Modules.SlotPicker.init();
+      moj.Modules.SlotPicker.init(null, {
+        optionLimit: 1
+      });
       moj.Modules.DateSlider.init();
     }
 

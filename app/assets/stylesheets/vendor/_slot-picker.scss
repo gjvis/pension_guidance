@@ -10,6 +10,10 @@
   margin-top: 1em;
 }
 
+.SlotPicker-choices {
+  min-height: 0 !important;
+}
+
 .SlotPicker--selected {
   .SlotPicker-choiceInner {
     padding-right: 0;
@@ -24,6 +28,10 @@
       padding-right: 0;
     }
   }
+}
+
+.SlotPicker-choice.is-chosen .SlotPicker-choiceInner {
+  padding-left: 10px;
 }
 
 .SlotPicker-day {
