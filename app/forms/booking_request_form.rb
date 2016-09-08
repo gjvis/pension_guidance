@@ -4,7 +4,7 @@ class BookingRequestForm
   attr_accessor :location_id, :primary_slot, :secondary_slot, :tertiary_slot,
                 :first_name, :last_name, :email, :telephone_number,
                 :memorable_word, :appointment_type, :accessibility_requirements,
-                :opt_in, :dc_pot
+                :opt_in, :dc_pot, :notes
 
   with_options if: :step_one? do |step_one|
     step_one.validates :primary_slot, presence: true

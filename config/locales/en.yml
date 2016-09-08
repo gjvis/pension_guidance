@@ -26,6 +26,7 @@ en:
         appointment_type: Age range
         dc_pot: Defined contribution pot
         opt_in: Terms and conditions
+        notes: Any other information
     errors:
       models:
         appointment_summary:

@@ -5,10 +5,8 @@ module BookingRequestsHelper
 
   def slot_period(slot_text)
     from_date = slot_properties(slot_text)[:from]
-    hour = from_date[0,2]
-    minute = from_date[2,4]
-    am_pm = hour.to_i < 12 ? 'am' : 'pm'
-    "#{hour}:#{minute}#{am_pm}"
+
+    DateTime.parse('2016-01-01 ' + from_date[0,2] + ':' + from_date[2,4]).strftime('%l:%M%P')
   end
 
   def slot_duration

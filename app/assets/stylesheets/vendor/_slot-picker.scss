@@ -26,6 +26,10 @@
   .SlotPicker-choice {
     .SlotPicker-choiceInner {
       padding-right: 0;
+
+      .SlotPicker-time {
+        font-size: 18px;
+      }
     }
   }
 }
@@ -39,10 +43,42 @@
   margin-left: 0;
 }
 
+.SlotPicker-slots {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+
+  @include media(tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    &:after {
+      content: '';
+      flex: auto;
+    }
+  }
+}
+
 .SlotPicker-label {
   font-size: 18px;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-right: .3em;
+  min-width: 0;
+
+  &:last-child {
+    margin-bottom: .5em;
+  }
+
+  @include media(tablet) {
+    font-size: 15px;
+    flex-basis: calc(50% - .3em);
+  }
+
+  @include media(desktop) {
+    flex-basis: calc(33.333% - .3em);
+  }
 }
 
 .SlotPicker-choice .SlotPicker-choiceInner {
@@ -50,7 +86,8 @@
 }
 
 .SlotPicker-choice.is-chosen .SlotPicker-choiceInner p {
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 2em;
 }
 
 .SlotPicker-input {

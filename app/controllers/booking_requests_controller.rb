@@ -55,6 +55,7 @@ class BookingRequestsController < ApplicationController
         :memorable_word,
         :appointment_type,
         :accessibility_requirements,
+        :notes,
         :opt_in,
         :dc_pot
       )
