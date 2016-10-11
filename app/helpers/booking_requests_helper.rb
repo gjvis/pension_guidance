@@ -11,6 +11,16 @@ module BookingRequestsHelper
     '60 minutes'
   end
 
+  def datalayer_json(step)
+    {
+      event: 'OnlineBooking',
+      step: step,
+      valid: @booking_request.errors.empty?,
+      booking_location_name: @booking_request.booking_location.name,
+      delivery_location_name: @booking_request.location_name
+    }.to_json.html_safe
+  end
+
   private
 
   def slot_properties(slot_text)
