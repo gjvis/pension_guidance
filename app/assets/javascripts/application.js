@@ -7,7 +7,6 @@
 
 //= require components/BaseComponent
 //= require components/Slider
-//= require components/youtube-video.js
 
 PWPG.clickTracker.init();
 PWPG.mobileNavToggler.init();
