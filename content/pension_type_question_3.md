@@ -17,12 +17,9 @@ tags:
 * Aviva
 * Axa
 * Friends Life
-* Imhotep Living
-* Irish Life
 * L&G
 * LV= (Liverpool Victoria)
 * Phoenix Life
-* Potempkin 5000
 * Prudential
 * Royal London
 * Scottish Life
