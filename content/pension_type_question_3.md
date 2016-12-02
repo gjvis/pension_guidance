@@ -2,7 +2,7 @@
 description: "Is your pension provider one of the following:"
 answers:
   'yes': /pension-type-defined-contribution
-  'no': /pension-type-defined-benefit
+  'no': /pension-type-defined-contribution
   dont_know: /pension-type-defined-contribution
 tags:
   - appointments
