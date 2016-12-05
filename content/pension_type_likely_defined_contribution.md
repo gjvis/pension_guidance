@@ -10,4 +10,4 @@ These are sometimes known as ‘money purchase’ pensions. The amount you get d
 
 There are different ways you can take your defined contribution pension pot. You can book a free [Pension Wise appointment](/appointments) to find out more.
 
-^You can also [check another pension](pension-types).^
+^You can also [check another pension](pension-type).^
