@@ -14,7 +14,7 @@ class OutputDocument
   end
 
   def pdf
-    Princely.new.pdf_from_string(html)
+    Princely::Pdf.new.pdf_from_string(html)
   end
 
   def supplementary_pension_transfers
