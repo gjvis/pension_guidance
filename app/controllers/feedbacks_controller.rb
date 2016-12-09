@@ -17,8 +17,7 @@ class FeedbacksController < ApplicationController
     end
   end
 
-  def thanks
-  end
+  def thanks; end
 
   private
 

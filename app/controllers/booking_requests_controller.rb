@@ -27,8 +27,7 @@ class BookingRequestsController < ApplicationController
     end
   end
 
-  def completed
-  end
+  def completed; end
 
   def ineligible
     @booking_feedback = BookingFeedbackForm.new

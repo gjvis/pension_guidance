@@ -1,7 +1,7 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do # rubocop:disable Metrics/BlockLength
   root 'home#show'
 
-  constraints format: 'html' do
+  constraints format: 'html' do # rubocop:disable Metrics/BlockLength
     resources :categories, only: 'show', path: 'browse'
 
     get '/book', to: redirect('/appointments', status: 302)
