@@ -26,7 +26,7 @@ gem 'output-templates', '~> 4.4.3', github: 'guidance-guarantee-programme/output
 gem 'phoner'
 gem 'princely'
 gem 'postcodes_io'
-gem 'puma'
+gem 'puma', '>= 3.12.6'
 gem 'rack-contrib'
 gem 'rails', '4.2.7.1'
 gem 'redis'
