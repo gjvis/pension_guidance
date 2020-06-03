@@ -57,7 +57,7 @@ group :test do
   gem 'fakeredis'
   gem 'launchy'
   gem 'pdf-inspector', require: 'pdf/inspector'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.6.0'
   gem 'phantomjs-binaries'
   gem 'scss-lint', '~> 0.30'
   gem 'shoulda-matchers'
