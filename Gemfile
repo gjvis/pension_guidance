@@ -8,20 +8,20 @@ git_source(:github) { |repo_name| "https://github.com/#{repo_name}.git" }
 gem 'autoprefixer-rails'
 gem 'booking_locations'
 gem 'bugsnag'
-gem 'canonical-rails'
+gem 'canonical-rails', '>= 0.0.9'
 gem 'faraday'
 gem 'faraday-conductivity'
 gem 'faraday_middleware'
 gem 'foreman'
-gem 'gaffe'
-gem 'govspeak', '~> 3.2'
-gem 'govuk_elements_rails'
-gem 'govuk_frontend_toolkit'
-gem 'govuk_template'
+gem 'gaffe', '>= 1.0.2'
+gem 'govspeak', '~> 3.5', '>= 3.5.2'
+gem 'govuk_elements_rails', '>= 2.2.1'
+gem 'govuk_frontend_toolkit', '>= 5.0.2'
+gem 'govuk_template', '>= 0.19.2'
 gem 'humanize'
-gem 'inline_svg'
+gem 'inline_svg', '>= 0.10.0'
 gem 'newrelic_rpm'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.11.0'
 gem 'output-templates', '~> 4.4.3', github: 'guidance-guarantee-programme/output-templates'
 gem 'phoner'
 gem 'princely'
@@ -33,9 +33,9 @@ gem 'redis'
 gem 'rgeo'
 gem 'rgeo-geojson'
 gem 'rubytree'
-gem 'sassc-rails'
+gem 'sassc-rails', '>= 1.3.0'
 gem 'sprockets-es6'
-gem 'sprockets-rails', '~> 3.0'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'uk_postcode'
 gem 'utf8-cleaner'
@@ -43,9 +43,9 @@ gem 'zendesk_api'
 
 group :development, :test do
   gem 'jasmine-jquery-rails'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.14.1'
   gem 'pry-rails'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
@@ -53,19 +53,19 @@ group :development do
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails', '>= 1.4.2', require: false
   gem 'fakeredis'
   gem 'launchy'
   gem 'pdf-inspector', require: 'pdf/inspector'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.6.0'
   gem 'phantomjs-binaries'
   gem 'scss-lint', '~> 0.30'
   gem 'shoulda-matchers'
-  gem 'site_prism'
+  gem 'site_prism', '>= 2.7'
   gem 'timecop'
   gem 'vcr'
   gem 'webmock'
-  gem 'wraith'
+  gem 'wraith', '>= 4.0.0'
 end
 
 group :staging, :production do
